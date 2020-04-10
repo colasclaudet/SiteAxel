@@ -41,20 +41,21 @@
                     </div>
                     <nav class="nav-menu mobile-menu">
                         <ul>
-                            <li><a href="./index.html">Home</a></li>
-                            <li><a href="./about.html">About</a></li>
-                            <li><a href="./services.html">Services</a></li>
-                            <li><a href="./pricing.html">Pricing</a></li>
-                            <li><a href="./portfolio.html">Portfolio</a></li>
-                            <li><a href="./blog.html">Blog</a></li>
-                            <li><a href="#">Pages</a>
-                                <ul class="dropdown">
-                                    <li><a href="./gallery.html">Gallery</a></li>
-                                    <li><a href="./portfolio-details.html">Portfolio Details</a></li>
-                                    <li><a href="./blog-details.html">Blog Details</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="./contact.html">Contact</a></li>
+                          <li><a href="./index.html">accueil</a></li>
+                          <li><a href="./about.html">à propos</a></li>
+                          <li><a href="./services.html">Services</a></li>
+                          <li><a href="./pricing.html">Mes tarifs</a></li>
+                          <!--<li><a href="./portfolio.html">Portfolio</a></li>
+                          <li><a href="./blog.html">Blog</a></li>
+                          <li><a href="#">Pages</a>
+                              <ul class="dropdown">
+                                  <li><a href="./gallery.html">Gallery</a></li>
+                                  <li><a href="./portfolio-details.html">Portfolio Details</a></li>
+                                  <li><a href="./blog-details.html">Blog Details</a></li>
+                              </ul>
+                          </li>-->
+                          <li class="active"><a href="./gallery.html">Gallerie</a></li>
+                          <li><a href="./contact.html">Me contacter</a></li>
                         </ul>
                     </nav>
                     <div class="top-search search-switch">
@@ -73,8 +74,8 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="bo-links">
-                        <a href="./index.html"><i class="fa fa-home"></i> Home</a>
-                        <span>Gallery</span>
+                        <a href="./index.html"><i class="fa fa-home"></i> Accueil</a>
+                        <span>Gallerie</span>
                     </div>
                 </div>
             </div>
@@ -82,19 +83,22 @@
     </div>
     <!-- Breadcrumb End -->
 
-    <!-- Gallery Section Begin -->
-    <div class="gallery-section spad">
+    <!-- Portfolio Section Begin -->
+    <section class="portfolio-section spad">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>Mes derniers projets</h2>
+                    </div>
                     <div class="filter-controls">
                         <ul>
-                            <li class="active" data-filter="*">All</li>
-                            <li data-filter=".fashion">Fashion</li>
-                            <li data-filter=".lifestyle">Lifestyle</li>
-                            <li data-filter=".natural">Natural</li>
-                            <li data-filter=".wedding">Wedding</li>
-                            <li data-filter=".videos">Videos</li>
+                            <li class="active" data-filter="*">Tout afficher</li>
+                            <li data-filter=".drone">Drone</li>
+                            <li data-filter=".paysage">Paysages</li>
+                            <li data-filter=".personnes">Personnes</li>
+                            <li data-filter=".nature">Nature</li>
+                            <li data-filter=".court_metrage">Court métrage</li>
                         </ul>
                     </div>
                 </div>
@@ -103,88 +107,95 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12 p-0">
-                    <div class="gallery-filter">
-                        <div class="gf-item set-bg fashion" data-setbg="img/gallery/gallery-1.jpg">
-                            <a href="img/gallery/gallery-1.jpg" class="gf-icon image-popup"><span
-                                    class="icon_plus"></span></a>
+                    <div class="portfolio-filter">
+                        <div class="pf-item set-bg drone paysage court_metrage nature" data-setbg="img/drone/drone-1.jpg">
+                            <a href="img/drone/drone-1.jpg" class="pf-icon image-popup"><span class="icon_plus"></span></a>
+                            <div class="pf-text">
+                                <h4>DRONE</h4>
+                                <span>Perpignan</span>
+                            </div>
                         </div>
-                        <div class="gf-item small-height set-bg lifestyle" data-setbg="img/gallery/gallery-2.jpg">
-                            <a href="img/gallery/gallery-2.jpg" class="gf-icon image-popup"><span
-                                    class="icon_plus"></span></a>
+                        <div class="pf-item large-width large-height set-bg drone paysage nature"
+                            data-setbg="img/drone/drone-2.jpg">
+                            <a href="img/drone/drone-2.jpg" class="pf-icon image-popup"><span class="icon_plus"></span></a>
+                            <div class="pf-text">
+                                <h4>DRONE</h4>
+                                <span>Perpignan</span>
+                            </div>
                         </div>
-                        <div class="gf-item large-small-height set-bg natural" data-setbg="img/gallery/gallery-3.jpg">
-                            <a href="img/gallery/gallery-3.jpg" class="gf-icon image-popup"><span
-                                    class="icon_plus"></span></a>
+                        <div class="pf-item large-width set-bg drone paysage nature" data-setbg="img/drone/drone-3.jpg">
+                            <a href="img/drone/drone-3.jpg" class="pf-icon image-popup"><span class="icon_plus"></span></a>
+                            <div class="pf-text">
+                                <h4>DRONE</h4>
+                                <span>Pyrénées</span>
+                            </div>
                         </div>
-                        <div class="gf-item small-height set-bg wedding" data-setbg="img/gallery/gallery-4.jpg">
-                            <a href="img/gallery/gallery-4.jpg" class="gf-icon image-popup"><span
-                                    class="icon_plus"></span></a>
+                        <div class="pf-item large-height set-bg drone paysage nature" data-setbg="img/drone/drone-4.jpg">
+                            <a href="img/drone/drone-4.jpg" class="pf-icon image-popup"><span class="icon_plus"></span></a>
+                            <div class="pf-text">
+                                <h4>DRONE</h4>
+                                <span>Perpignan</span>
+                            </div>
                         </div>
-                        <div class="gf-item set-bg lifestyle" data-setbg="img/gallery/gallery-5.jpg">
-                            <a href="img/gallery/gallery-5.jpg" class="gf-icon image-popup"><span
-                                    class="icon_plus"></span></a>
+                        <div class="pf-item set-bg drone paysage court_metrage nature" data-setbg="img/drone/drone-5.jpg">
+                            <a href="img/drone/drone-5.jpg" class="pf-icon image-popup"><span class="icon_plus"></span></a>
+                            <div class="pf-text">
+                              <h4>DRONE</h4>
+                              <span>Niolon</span>
+                            </div>
                         </div>
-                        <div class="gf-item large-height set-bg natural" data-setbg="img/gallery/gallery-6.jpg">
-                            <a href="img/gallery/gallery-6.jpg" class="gf-icon image-popup"><span
-                                    class="icon_plus"></span></a>
+                        <div class="pf-item set-bg drone paysage court_metrage nature" data-setbg="img/drone/drone-6.jpg">
+                            <a href="img/drone/drone-6.jpg" class="pf-icon image-popup"><span class="icon_plus"></span></a>
+                            <div class="pf-text">
+                                <h4>DRONE</h4>
+                                <span>Perpignan</span>
+                            </div>
                         </div>
-                        <div class="gf-item set-bg videos" data-setbg="img/gallery/gallery-7.jpg">
-                            <a href="img/gallery/gallery-7.jpg" class="gf-icon image-popup"><span
-                                    class="icon_plus"></span></a>
+                        <div class="pf-item set-bg drone paysage" data-setbg="img/drone/drone-7.jpg">
+                            <a href="img/drone/drone-7.jpg" class="pf-icon image-popup"><span class="icon_plus"></span></a>
+                            <div class="pf-text">
+                                <h4>DRONE</h4>
+                                <span>Perpignan</span>
+                            </div>
                         </div>
-                        <div class="gf-item set-bg fashion" data-setbg="img/gallery/gallery-8.jpg">
-                            <a href="img/gallery/gallery-8.jpg" class="gf-icon image-popup"><span
-                                    class="icon_plus"></span></a>
+                        <div class="pf-item set-bg drone paysage nature" data-setbg="img/drone/drone-8.jpg">
+                            <a href="img/drone/drone-8.jpg" class="pf-icon image-popup"><span class="icon_plus"></span></a>
+                            <div class="pf-text">
+                                <h4>DRONE</h4>
+                                <span>Perpignan</span>
+                            </div>
                         </div>
-                        <div class="gf-item medium-large-height set-bg videos" data-setbg="img/gallery/gallery-9.jpg">
-                            <a href="img/gallery/gallery-9.jpg" class="gf-icon image-popup"><span
-                                    class="icon_plus"></span></a>
+                        <div class="pf-item large-width set-bg personnes" data-setbg="img/cars/car-6.png">
+                            <a href="img/cars/car-6.png" class="pf-icon image-popup"><span class="icon_plus"></span></a>
+                            <div class="pf-text">
+                                <h4>Salon Automobile</h4>
+                                <span>Chantilly</span>
+                            </div>
                         </div>
-                        <div class="gf-item large-height set-bg fashion" data-setbg="img/gallery/gallery-6.jpg">
-                            <a href="img/gallery/gallery-6.jpg" class="gf-icon image-popup"><span
-                                    class="icon_plus"></span></a>
+                        <div class="pf-item set-bg personnes" data-setbg="img/cars/car-5.png">
+                            <a href="img/portfolio/pf-11.jpg" class="pf-icon image-popup"><span class="icon_plus"></span></a>
+                            <div class="pf-text">
+                                <h4>Salon Automobile</h4>
+                                <span>Chantilly</span>
+                            </div>
                         </div>
-                        <div class="gf-item set-bg wedding" data-setbg="img/gallery/gallery-10.jpg">
-                            <a href="img/gallery/gallery-10.jpg" class="gf-icon image-popup"><span
-                                    class="icon_plus"></span></a>
-                        </div>
-                        <div class="gf-item large-height set-bg wedding" data-setbg="img/gallery/gallery-11.jpg">
-                            <a href="img/gallery/gallery-11.jpg" class="gf-icon image-popup"><span
-                                    class="icon_plus"></span></a>
-                        </div>
-                        <div class="gf-item small-height set-bg wedding" data-setbg="img/gallery/gallery-12.jpg">
-                            <a href="img/gallery/gallery-12.jpg" class="gf-icon image-popup"><span
-                                    class="icon_plus"></span></a>
-                        </div>
-                        <div class="gf-item set-bg wedding" data-setbg="img/gallery/gallery-13.jpg">
-                            <a href="img/gallery/gallery-13.jpg" class="gf-icon image-popup"><span
-                                    class="icon_plus"></span></a>
-                        </div>
-                        <div class="gf-item large-height set-bg wedding" data-setbg="img/gallery/gallery-14.jpg">
-                            <a href="img/gallery/gallery-14.jpg" class="gf-icon image-popup"><span
-                                    class="icon_plus"></span></a>
-                        </div>
-                        <div class="gf-item set-bg wedding" data-setbg="img/gallery/gallery-15.jpg">
-                            <a href="img/gallery/gallery-15.jpg" class="gf-icon image-popup"><span
-                                    class="icon_plus"></span></a>
-                        </div>
-                        <div class="gf-item large-height set-bg wedding" data-setbg="img/gallery/gallery-16.jpg">
-                            <a href="img/gallery/gallery-16.jpg" class="gf-icon image-popup"><span
-                                    class="icon_plus"></span></a>
-                        </div>
-                        <div class="gf-item medium-small-height set-bg wedding" data-setbg="img/gallery/gallery-17.jpg">
-                            <a href="img/gallery/gallery-17.jpg" class="gf-icon image-popup"><span
-                                    class="icon_plus"></span></a>
+                        <div class="pf-item large-width large-height set-bg personnes"
+                            data-setbg="img/cars/car-3.png">
+                            <a href="img/cars/car-3.png" class="pf-icon image-popup"><span class="icon_plus"></span></a>
+                            <div class="pf-text">
+                                <h4>Salon Automobile</h4>
+                                <span>Chantilly</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="load-more-btn portfolio-btn">
+        <div class="load-more-btn">
             <a href="#">Load More</a>
         </div>
-    </div>
-    <!-- Gallery Section End -->
+    </section>
+    <!-- Portfolio Section End -->
 
     <!-- Footer Section Begin -->
     <footer class="footer-section">
@@ -197,42 +208,41 @@
                                 <img src="img/f-logo.png" alt="">
                             </a>
                         </div>
-                        <p>Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                            et dolore magna aliqua.</p>
+                        <p>Me suivre sur les réseaux sociaux :</p>
                         <div class="fa-social">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-youtube-play"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/axel.paulous"><i class="fa fa-facebook"></i></a>
+                            <!--<a href="#"><i class="fa fa-twitter"></i></a>-->
+                            <a href="https://vimeo.com/user72009745"><i class="fa fa-vimeo"></i></a>
+                            <a href="https://www.instagram.com/axelpaulous/"><i class="fa fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="fs-widget">
-                        <h5>Instagram</h5>
+                        <!--<h5>Instagram</h5>
                         <div class="fw-instagram">
                             <img src="img/instagram/insta-1.jpg" alt="">
                             <img src="img/instagram/insta-2.jpg" alt="">
                             <img src="img/instagram/insta-3.jpg" alt="">
-                        </div>
+                        </div>-->
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="fs-widget">
-                        <h5>Quick links</h5>
+                        <h5>Accès rapide</h5>
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="./index.html">Accueil</a></li>
+                            <li><a href="./about.html">à propos</a></li>
+                            <li><a href="./contact.html">Me contacter</a></li>
                         </ul>
                         <ul>
-                            <li><a href="#">Gallery</a></li>
-                            <li><a href="#">Portfolio</a></li>
-                            <li><a href="#">Services</a></li>
+                            <li><a href="./services.html">Services</a></li>
+                            <li><a href="./pricing.html">Mes tarifs</a></li>
+                            <li><a href="./gallery.html">Gallerie</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
+                <!--<div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="fs-widget">
                         <h5>Subscribe</h5>
                         <p>Imolor amet consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
@@ -243,7 +253,7 @@
                             </form>
                         </div>
                     </div>
-                </div>
+                </div>-->
                 <div class="col-lg-12">
                     <div class="copyright-text">
                         <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
